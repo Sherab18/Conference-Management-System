@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-weight: 400;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #CCFBF1;
+    }
+    h1 {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        text-align: center;
+    }
+    .reviewer-signup {
+        width: 500px;
+        background: #fff;
+        border-radius: 10px;
+    }
+    .signup-top {
+        padding: 40px 40px 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .input-wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    input {
+        font-size: 15px;
+        padding: 15px 0;
+        width: 100%;
+        border-radius: 7px;
+        background-color: #ecf0f3;
+        border: none;
+        outline: none;
+        color: black;
+    }
+    input:focus {
+        outline: none;
+        box-shadow: 1px 1px 1px #cbced1, -1px 1px 1px #fff;
+        border: none;
+        outline: none;
+    }
+    input.submit {
+        width: 100%;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 15px;
+        margin: 10px 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: #0d6efd;
+        color: #fff;
+
+    }
+
+</style>
+</head>
+<body>
+    <div class=reviewer-signup>
+        <div class="signup-top">
+            <h1>Reviewer</h1><br><br>
+            <form action="/reviewer/signUp" method="POST">
+                <div class="input-wrap">
+                    <input type="text" name="emailId" placeholder="   EmailId">
+                </div>
+                <div class="input-wrap">
+                    <input type="text" name="firstName" placeholder="   First Name">
+                </div>
+                <div class="input-wrap">
+                    <input type="text" name="lastName" placeholder="   Last Name">
+                </div>
+                <div class="input-wrap">
+                    <input type="text" name="organization" placeholder="   Your Organization">
+                </div>
+                <div class="input-wrap">
+                    <input type="text" name="designation" placeholder="   Your Designation">
+                </div>
+                <div class="input-wrap">
+                    <input type="password" name="password" placeholder="   Password">
+                </div>
+                <div>
+                    <input type="submit" class="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+   
+</body>
+</html>

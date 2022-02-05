@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference</title>
+    <style>
+        * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-weight: 400;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #CCFBF1;
+    }
+    .submit-paper {
+        width: 500px;
+        background: #fff;
+        border-radius: 10px;
+        height: 550px;
+    }
+    h1 {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+    }
+    .submit-top {
+        padding: 50px 50px 30px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .input-wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+        bottom: 20px;
+    }
+    input {
+        font-size: 15px;
+        padding: 15px 0;
+        width: 80%;
+        border-radius: 7px;
+        background-color: #ecf0f3;
+        border: none;
+        outline: none;
+        color: black;
+        margin-left: 45px;
+    }
+    input:focus {
+        outline: none;
+        box-shadow: 1px 1px 1px #cbced1, -1px 1px 1px #fff;
+        border: none;
+        outline: none;
+    }
+    [name=paper] {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+        bottom: 20px;
+        height: 100px;
+        
+    }
+    [type=submit] {
+        width: 80%;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 15px;
+        margin-left: 45px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: #0d6efd;
+        color: #fff;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="submit-paper">
+        <div class="sumit-top"><br>
+            <h1>Submit New Paper</h1><br><br>
+            <form action="/reviewee/submitNewPaper" method="POST">
+                <div class="input-wrap">
+                    <input type="text" name="topic" placeholder="   Topic">
+                </div>
+                <div class="input-wrap">
+                    <input type="text" name="category" placeholder="   Category">
+                </div>
+                <div class="input-wrap">
+                    <input type="text" name="date" placeholder="   DD/MM/YYYY">
+                </div>
+                <div class="text">
+                    <input type="text" name="paper" placeholder="  Text">
+                </div>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

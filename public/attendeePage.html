@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conference</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            font-family: "poppins", sans-serif;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            color: #555;
+            background: #CCFBF1;;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-style: normal;
+        }
+       
+        button {
+            color: #fff;
+            width: 10%;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 15px;
+            margin: 10px 0;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            margin-top: 35px;
+            background-color: #009879;
+        }
+        .styled-table {
+            border-collapse: collapse;
+            margin-right: 30px;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            width: 1000px;
+            height: 100px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            
+        }
+        .styled-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }
+        .styled-table th {
+            padding: 10px 20px;
+        }
+        .duration {
+            width: 2px;
+        }
+        tbody {
+            padding: 10px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+        <div class="logout-top"><br><br><br><br>
+            <h1>Attendee</h1><br>
+            
+            <table id="events" class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Venue</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Start Time</th>
+                        <th class="duration">Duration(in mins)</th>
+                    </tr>
+                </thead>
+                <tbody id="addHere">
+        
+                </tbody>
+            </table>
+            <form action="/logout" method="GET">
+                <button> Logout </button>
+            </form>
+            <!-- <p> <%= val %></p> -->
+            <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src='./script/attendeePageScript.js'> </script>
+        </div>
+    
+</body>
+</html>

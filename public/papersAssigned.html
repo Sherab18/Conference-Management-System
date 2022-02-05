@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <style>
+    body {
+        margin-left: 30px;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        font-weight: 700;
+        display: flex;
+        color: #555;
+        background: #CCFBF1;
+    }
+    .paper {
+        width: 60%;
+        height: 80%;
+        background: #fff;
+        border-radius: 10px;
+        position: relative;
+        bottom: -80px;
+        left: 260px;
+    }
+    .paper-assign {
+        padding: 40px 40px 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    h1 {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="paper">
+        <div class="paper-assign">
+            <h1>Papers to Review</h1>
+            <div id="addHere">
+        
+            </div>
+
+        </div>
+    </div>
+   
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src='./script/paperAssignedScript.js'> </script>
+</body>
+</html>

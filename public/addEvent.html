@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference</title>
+    <style>
+        * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-weight: 400;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #CCFBF1;
+    }
+    .event {
+        width: 500px;
+        background: #fff;
+        border-radius: 10px;
+    }
+    .event-top {
+        padding: 40px 40px 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .input-wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    input {
+        font-size: 15px;
+        padding: 15px 0;
+        width: 100%;
+        border-radius: 7px;
+        background-color: #ecf0f3;
+        border: none;
+        outline: none;
+        color: black;
+    }
+    input:focus {
+        outline: none;
+        box-shadow: 1px 1px 1px #cbced1, -1px 1px 1px #fff;
+        border: none;
+        outline: none;
+    }
+    [type=submit] {
+        width: 100%;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 15px;
+        margin: 10px 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: #0d6efd;
+        color: #fff;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="event">
+        <div class="event-top">
+            <h1>Add New Event</h1>
+            <form action="/event/addNewEvent" method="POST">
+                <div class="input-wrap">
+                    <input type="text" name="venue" placeholder="venue">
+                </div>
+                <div class="input-wrap">
+                    <input type="text" name="category" placeholder="category">
+                </div>
+                <div class="input-wrap">
+                    <input type="text" name="date" placeholder="DD/MM/YYYY">
+                </div>
+                <div class="input-wrap">
+                    <input type="time" name="startTime">
+                </div>
+                <div class="input-wrap">
+                    <input type="number" name="duration" placeholder="duration in minutes">
+                </div>
+                <div class="input-wrap">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
